@@ -1,0 +1,14 @@
+1. Array                          : C++ - Vector                    | Python - List
+2. Linked List                 : C++ - List                         | Python - List
+3. Stack                           : C++ - Stack                      | Python - List (implemented as a stack)
+4. Queue                          : C++ - Queue                    | Python - List (implemented as a queue)
+5. Hash Table                  : C++ - Unordered Map  | Python - Dictionary
+6. Binary Tree                : C++ - N/A                        | Python - N/A
+7. Binary Search Tree   : C++ - Set/Map                | Python - N/A
+8. Heap                             : C++ - Priority Queue    | Python - Heapq
+9. Graph                          : C++ - N/A                        | Python - N/A
+10. Trie                           : C++ - N/A                         | Python - N/A
+11. Set                             : C++ - Set                          | Python - Set
+12. Priority Queue       : C++ - Priority Queue     | Python - PriorityQueue (from queue module)
+
+These lists cover the most commonly used data structures in programming, but there are many other specialized data structures and variations available depending on the specific requirements of a problem or the programming language being used.
