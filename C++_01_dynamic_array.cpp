@@ -1,23 +1,28 @@
 #include <iostream>
 
-class DynamicArray {
+class DynamicArray
+{
 private:
     int *arr;
     int capacity;
     int size;
 
 public:
-    DynamicArray() {
+    DynamicArray()
+    {
         capacity = 2; // Initial capacity
         size = 0;
         arr = new int[capacity];
     }
 
-    void push_back(int value) {
-        if (size == capacity) {
+    void push_back(int value)
+    {
+        if (size == capacity)
+        {
             // If the array is full, double the capacity
             int *newArr = new int[capacity * 2];
-            for (int i = 0; i < size; i++) {
+            for (int i = 0; i < size; i++)
+            {
                 newArr[i] = arr[i];
             }
             delete[] arr;
@@ -28,9 +33,11 @@ public:
         size++;
     }
 
-    int pop_back() {
-        if (size == 0) {
-            std::cerr << "Array is empty!" << std::endl;
+    int pop_back()
+    {
+        if (size == 0)
+        {
+            std::cout << "Array is empty!" <<"\n";
             return -1;
         }
         int value = arr[size - 1];
@@ -38,25 +45,28 @@ public:
         return value;
     }
 
-    int getSize() const {
+    int getSize() const
+    {
         return size;
     }
 
-    ~DynamicArray() {
+    ~DynamicArray()
+    {
         delete[] arr;
     }
 };
 
-int main() {
+int main()
+{
     DynamicArray dynamicArr;
 
     dynamicArr.push_back(10);
     dynamicArr.push_back(20);
     dynamicArr.push_back(30);
 
-    std::cout << "Size of dynamicArr: " << dynamicArr.getSize() << std::endl;
-    std::cout << "Popped value: " << dynamicArr.pop_back() << std::endl;
-    std::cout << "Size of dynamicArr: " << dynamicArr.getSize() << std::endl;
+    std::cout << "Size of dynamicArr: " << dynamicArr.getSize() << "\n";
+    std::cout << "Popped value: " << dynamicArr.pop_back() << "\n";
+    std::cout << "Size of dynamicArr: " << dynamicArr.getSize() << "\n";
 
     return 0;
 }
